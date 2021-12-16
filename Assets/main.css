@@ -1,5 +1,7 @@
 /* GENERAL STYLES */
-
+.box:hover {
+  box-shadow: 10px 10px violet;
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -7,21 +9,24 @@
 }
 
 body {
-  background-color: #d9dcd6;
+  background-color: #4e2a84;
 }
 
 a {
-  color: white;
+  color: #4e2a84;
+  text-decoration: none;
 }
 
-/* HEADER */
+h1 {
+  font-family: "Strait", sans-serif;
+}
 
 header {
   padding: 20px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  background-color: #4e2a84;
-  color: white;
+  font-family: "Strait", sans-serif;
+  background-color: white;
+  color: #4e2a84;
+  text-decoration: none;
 }
 
 header h1 {
@@ -29,20 +34,13 @@ header h1 {
   font-size: 48px;
 }
 
-/* header h1 .jc {
-  color: #d9dcd6;
-} */
-
 header nav {
   padding-top: 15px;
   margin-right: 20px;
   float: right;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Strait", sans-serif;
   font-size: 20px;
-}
-
-header nav ul {
-  list-style-type: none;
+  text-decoration: none;
 }
 
 header nav ul li {
@@ -50,42 +48,59 @@ header nav ul li {
   margin-left: 25px;
 }
 
-w-50 {
-  width: 50%;
+br {
+  line-height: 12;
 }
 
-.demo {
-  display: inline-block;
-}
-
-.column {
+nav ul li {
   display: inline-block;
   margin-left: 25px;
 }
 
-/* TEXT STYLES */
+h2 ~ a {
+  color: whitesmoke;
+}
 
-/* a {
-  color: #ffffff;
-  text-decoration: none;
-} */
+p {
+  font-family: "Strait", sans-serif;
+}
+.demo {
+  padding-top: 15px;
+  font-family: "Strait", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
 
-/* p {
-  font-size: 16px;
-} */
+.about-me {
+  text-align: center;
+}
 
-/* HERO DIV WITH BACKGROUND IMAGE */
+.justify {
+  text-align: center;
+}
 
-/* .hero {
-  height: 800px;
-  width: 100%;
-  margin-bottom: 25px;
-  background-image: url("../images/digital-marketing-meeting.jpg");
-  background-size: cover;
-  background-position: center;
-} */
+.box {
+  width: 300px;
+  border: 5px dashed whitesmoke;
+  padding: 20px;
+  margin: 15px;
+  color: whitesmoke;
+  font-family: "Strait", sans-serif;
+}
 
-/* FLOATS */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 33%;
+}
+
+.boxy {
+  border: 10px solid whitesmoke;
+  padding: 50px;
+  margin: 20px;
+  color: whitesmoke;
+}
 
 .float-left {
   float: left;
@@ -97,73 +112,71 @@ w-50 {
   margin-left: 25px;
 }
 
-/* MAIN */
-/* 
-main {
-  width: 75%;
-  display: inline-block;
-  margin-left: 20px;
-} */
-
-/* BENEFITS ASIDE */
-
-/* .benefits {
-  margin-right: 20px;
-  padding: 20px;
-  clear: both;
-  float: right;
-  width: 20%;
-  height: 100%;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #2589bd;
-} */
-/* 
-.benefit {
-  margin-bottom: 32px;
-  color: #ffffff;
-} */
-
-/* .benefit h3 {
-  margin-bottom: 10px;
-  text-align: center;
-} */
-
-/* .benefit img {
+footer {
   display: block;
-  margin: 10px auto;
-  max-width: 150px;
-} */
-
-/* SERVICES SECTIONS */
-
-/* .service {
-  margin-bottom: 20px;
   padding: 50px;
-  height: 300px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #0072bb;
-  color: #ffffff;
-} */
-
-/* .service img {
-  max-height: 200px;
-} */
-
-/* .service h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-} */
-
-/* FOOTER */
-
-/* footer {
-  padding: 30px;
-  clear: both;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
   text-align: center;
+  color: whitesmoke;
+  border: 5px;
+  font-family: "Strait", sans-serif;
+}
+
+.container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+/*Neon*/
+
+/* a:nth-child(1) {
+  font-family: Monoton;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+} */
+/* 
+a:nth-child(2) {
+  font-family: Iceland;
+  animation: neon2 1.5s ease-in-out infinite alternate;
 } */
 
-/* footer h2 {
-  font-size: 20px;
+/* a:nth-child(3) {
+  font-family: Pacifico;
+  animation: neon3 1.5s ease-in-out infinite alternate;
+}
+
+a:nth-child(4) {
+  font-family: "Press Start 2P";
+  animation: neon4 1.5s ease-in-out infinite alternate;
+}
+
+a:nth-child(5) {
+  font-family: Audiowide;
+  animation: neon5 1.5s ease-in-out infinite alternate;
 } */
+
+h1:nth-child(6) {
+  font-family: Vampiro One;
+  animation: neon6 1.5s ease-in-out infinite alternate;
+}
+
+/*glow*/
+
+@keyframes neon6 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de,
+      0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de,
+      0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+  }
+}
+
+/* Media Query */
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 3.5em;
+  }
+}
