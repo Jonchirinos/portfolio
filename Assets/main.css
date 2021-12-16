@@ -84,11 +84,18 @@ p {
   font-family: "Strait", sans-serif;
 }
 
-.boxy {
+.box2 {
   border: 10px solid whitesmoke;
   padding: 50px;
   margin: 20px;
   color: whitesmoke;
+}
+
+.box-row {
+  padding-top: 15px;
+  font-family: "Strait", sans-serif;
+  font-size: 20px;
+  text-align: center;
 }
 
 .center {
@@ -96,13 +103,6 @@ p {
   margin-left: auto;
   margin-right: auto;
   width: 20%;
-}
-
-.demo {
-  padding-top: 15px;
-  font-family: "Strait", sans-serif;
-  font-size: 20px;
-  text-align: center;
 }
 
 .float-left {
