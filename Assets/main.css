@@ -1,15 +1,9 @@
 /* GENERAL STYLES */
-.box:hover {
-  box-shadow: 10px 10px violet;
-}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-
-body {
-  background-color: #4e2a84;
 }
 
 a {
@@ -17,8 +11,16 @@ a {
   text-decoration: none;
 }
 
+body {
+  background-color: #4e2a84;
+}
+
 h1 {
   font-family: "Strait", sans-serif;
+}
+
+h2 ~ a {
+  color: whitesmoke;
 }
 
 header {
@@ -48,35 +50,29 @@ header nav ul li {
   margin-left: 25px;
 }
 
-br {
-  line-height: 12;
-}
-
 nav ul li {
   display: inline-block;
   margin-left: 25px;
 }
 
-h2 ~ a {
-  color: whitesmoke;
-}
-
 p {
   font-family: "Strait", sans-serif;
+  padding: 30px;
 }
-.demo {
-  padding-top: 15px;
-  font-family: "Strait", sans-serif;
-  font-size: 20px;
-  text-align: center;
-}
-
 .about-me {
   text-align: center;
 }
 
-.justify {
+.anchor {
   text-align: center;
+  font-size: 1em;
+  margin-bottom: 0;
+  margin-top: 0;
+  line-height: 1;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Strait", sans-serif;
+  animation: neon1 1.5s ease-in-out infinite alternate;
 }
 
 .box {
@@ -88,18 +84,25 @@ p {
   font-family: "Strait", sans-serif;
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 33%;
-}
-
 .boxy {
   border: 10px solid whitesmoke;
   padding: 50px;
   margin: 20px;
   color: whitesmoke;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.demo {
+  padding-top: 15px;
+  font-family: "Strait", sans-serif;
+  font-size: 20px;
+  text-align: center;
 }
 
 .float-left {
@@ -112,6 +115,18 @@ p {
   margin-left: 25px;
 }
 
+.fnt-75 {
+  font-size: 75px;
+}
+
+.justify {
+  text-align: center;
+}
+
+.p-30 {
+  padding: 30px;
+}
+
 footer {
   display: block;
   padding: 50px;
@@ -121,62 +136,26 @@ footer {
   font-family: "Strait", sans-serif;
 }
 
-.container {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
+/*Hover elements*/
+.box:hover {
+  box-shadow: 10px 10px violet;
 }
-
-/*Neon*/
-
-/* a:nth-child(1) {
-  font-family: Monoton;
-  animation: neon1 1.5s ease-in-out infinite alternate;
-} */
-/* 
-a:nth-child(2) {
-  font-family: Iceland;
-  animation: neon2 1.5s ease-in-out infinite alternate;
-} */
-
-/* a:nth-child(3) {
-  font-family: Pacifico;
-  animation: neon3 1.5s ease-in-out infinite alternate;
-}
-
-a:nth-child(4) {
-  font-family: "Press Start 2P";
-  animation: neon4 1.5s ease-in-out infinite alternate;
-}
-
-a:nth-child(5) {
-  font-family: Audiowide;
-  animation: neon5 1.5s ease-in-out infinite alternate;
-} */
-
-h1:nth-child(6) {
-  font-family: Vampiro One;
-  animation: neon6 1.5s ease-in-out infinite alternate;
-}
-
-/*glow*/
-
-@keyframes neon6 {
+/* Used for color in Neon Logo */
+@keyframes neon1 {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de,
-      0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #4e2a84,
+      0 0 70px #4e2a84, 0 0 80px #4e2a84, 0 0 100px #4e2a84, 0 0 150px #4e2a84;
   }
   to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de,
-      0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #4e2a84,
+      0 0 35px #4e2a84, 0 0 40px #4e2a84, 0 0 50px #4e2a84, 0 0 75px #4e2a84;
   }
 }
 
-/* Media Query */
+/* Media Query for sizing */
 
 @media (max-width: 650px) {
-  h1 {
+  p {
     font-size: 3.5em;
   }
 }
