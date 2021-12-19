@@ -1,4 +1,4 @@
-/* GENERAL STYLES */
+/* General Styling of the page */
 
 * {
   box-sizing: border-box;
@@ -59,10 +59,20 @@ p {
   font-family: "Strait", sans-serif;
   padding: 30px;
 }
+/* footer styling */
+footer {
+  display: block;
+  padding: 50px;
+  text-align: center;
+  color: whitesmoke;
+  border: 5px;
+  font-family: "Strait", sans-serif;
+}
+/* styling classes */
 .about-me {
   text-align: center;
 }
-
+/* contains neon animation along with logo styling */
 .anchor {
   text-align: center;
   font-size: 1em;
@@ -89,7 +99,7 @@ p {
   margin: 20px;
   color: whitesmoke;
 }
-
+/* Styling for link boxes */
 .box-row {
   padding-top: 15px;
   font-family: "Strait", sans-serif;
@@ -116,15 +126,6 @@ p {
   padding: 30px;
 }
 
-footer {
-  display: block;
-  padding: 50px;
-  text-align: center;
-  color: whitesmoke;
-  border: 5px;
-  font-family: "Strait", sans-serif;
-}
-
 /*Hover elements*/
 .box:hover {
   box-shadow: 10px 10px violet;
@@ -145,7 +146,7 @@ footer {
 
 @media (max-width: 650px) {
   p {
-    font-size: 3.5em;
+    font-size: 1.5em;
   }
 }
 
