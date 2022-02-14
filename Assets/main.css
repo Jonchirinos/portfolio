@@ -102,7 +102,7 @@ footer {
 }
 
 .box3 {
-    border: 5px dashed whitesmoke;
+    border: 10px solid whitesmoke;
     justify-content: center;
     padding: 20px;
     margin: 15px;
