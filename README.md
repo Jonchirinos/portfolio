@@ -12,7 +12,7 @@ A creative space to showcase projects I've completed, contact info, and a resume
 
 ## Screenshot
 
-![A screenshot of the website](./Assets/PortfolioImages/portfolio.png)
+![A screenshot of the website](./Assets/Images/portfolio.png)
 
 ## Links to Application
 
